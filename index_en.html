@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>LANDING PAGE RBECO</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo"><img src="images/rblogo.png" alt="logo" /></div>
+      
+      <ul class="nav__links">
+        <li class="link"><a href="#o-nas">ABOUT US</a></li>
+        <li class="link"><a href="#produkty">PRODUCTS</a></li>
+        <li class="link"><a href="#opinie">OPINIONS</a></li>
+        <li class="link"><a href="#kontakt">CONTACT</a></li>
+      </ul>
+      <button class="btnheader" onclick="scrollToContact()">Make an appointment</button>
+      <button id="lang-btn" class="lang-btn" onclick="toggleLanguage()"><img src="images/eng.png"  width="10" height="25" alt="">EN</button>
+    </nav>
+    <header>
+      <div class="section__container header__container">
+        <div class="header__image">
+          <img src="images/7.jpeg" alt="header" />
+          <img src="images/5.png" alt="header" />
+        </div>
+        <div class="header__content">
+          <div>
+            <h1>Recycling <br> is just <br />the beginning!</h1>
+            <p class="section__subtitle">
+              Our company’s activity is comprehensive supply of eco-components for packaging and at the same time helping to create a pro-ecological image of the client’s brand.
+            </p>
+            <div class="action__btns">
+              <a class="btn" href="https://selglam.com/kat/eko-wypelniacze/wiorka" role="button">See more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="gallary" id="produkty">
+      <div class="section__container gallary__container">
+        <div class="gallary__content">
+          <div>
+            <h2 class="section__title">
+              Discover our products
+            </h2>
+            <p class="section__subtitle">
+              Our products are fully ecological <br> and reliable.
+            </p>
+            <div class="view__all">
+              <a class="btn" href="https://selglam.com/kat/eko-wypelniacze/wiorka" role="button">
+                See more
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="image__gallary">
+          <div class="gallary__col">
+            <img src="images/1.png" alt="gallary" />
+          </div>
+          <div class="gallary__col">
+            <img src="images/2.png" alt="gallary" />
+            <img src="images/3.png" alt="gallary" />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section__container destination__container" id="o-nas">
+      <div class="section__header">
+        <div>
+          <h2 class="section__title"> Get inspired: Our products in action</h2>
+          <p class="section__subtitle">
+            Is there an important occasion coming up? Are you planning an industry event and looking for an idea for small gifts for your guests? Leave it to us! We can create a wonderful gift basket for you, personalized especially for you.
+          </p>
+        </div>
+      </div>
+  
+      <div class="destination__grid">
+        <div class="destination__card">
+          <img src="images_for_inspiration/1.png" alt="destination" class="zoom-image" onclick="openImage(0)" />
+          <div class="destination__details">
+            <p class="destination__title">CLICK</p>
+            <p class="destination__subtitle"> TO ENLARGE</p>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="images_for_inspiration/2.png" alt="destination" class="zoom-image" onclick="openImage(1)" />
+          <div class="destination__details">
+            <p class="destination__title">CLICK</p>
+            <p class="destination__subtitle"> TO ENLARGE</p>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="images_for_inspiration/3.png" alt="destination" class="zoom-image" onclick="openImage(2)" />
+          <div class="destination__details">
+            <p class="destination__title">CLICK</p>
+            <p class="destination__subtitle"> TO ENLARGE</p>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="images_for_inspiration/4.png" alt="destination" class="zoom-image" onclick="openImage(3)" />
+          <div class="destination__details">
+            <p class="destination__title">CLICK</p>
+            <p class="destination__subtitle"> TO ENLARGE</p>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="images_for_inspiration/5.png" alt="destination" class="zoom-image" onclick="openImage(4)" />
+          <div class="destination__details">
+            <p class="destination__title">CLICK</p>
+            <p class="destination__subtitle"> TO ENLARGE</p>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="images_for_inspiration/6.png" alt="destination" class="zoom-image" onclick="openImage(5)" />
+          <div class="destination__details">
+            <p class="destination__title">CLICK</p>
+            <p class="destination__subtitle"> TO ENLARGE</p>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="images_for_inspiration/7.png" alt="destination" class="zoom-image" onclick="openImage(6)" />
+          <div class="destination__details">
+            <p class="destination__title">CLICK</p>
+            <p class="destination__subtitle"> TO ENLARGE</p>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="images_for_inspiration/8.png" alt="destination" class="zoom-image" onclick="openImage(7)" />
+          <div class="destination__details">
+            <p class="destination__title">CLICK</p>
+            <p class="destination__subtitle"> TO ENLARGE</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal -->
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <!-- Navigation Arrows -->
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+      </div>
+    </section>
+
+    <section class="trip" id="opinie">
+      <div class="section__container trip__container">
+        <h2 class="section__title">Our Clients' Opinions</h2>
+        <p class="section__subtitle">
+          See how our clients rate Us
+        </p>
+        <div id="shapo-widget-e1e24931344d910d185b"></div>
+        <script id="shapo-embed-js" type="text/javascript" src="https://cdn.shapo.io/js/embed.js" defer></script>
+      </div>
+    </section>
+    <section class="subscribe" id="kontakt">
+      <div class="section__container subscribe__container">
+        <div class="subscribe__content">
+          <h2 class="section__title">Write to us and learn more</h2>
+        </div>
+        <div class="subscribe__form">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="89dd3bd1-6a56-468b-b69c-77712c94f781">
+            <input type="text" name="name" placeholder="name" required />
+            <input type="email" name="email" placeholder="email" required /> 
+            <textarea name="message" placeholder="Your message: " required></textarea> 
+            <br>
+            <center><button class="btn" type="submit">Send</button></center>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>RBECO<span>.</span></h3>
+          <p>
+            Our business focuses on providing comprehensive eco-packaging components while simultaneously helping to create a pro-ecological brand image for our clients.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Contact us</h4>
+          <p>
+            <span>Address:</span> ul. Załęska 106B, 35-322 Rzeszów
+          </p>
+          <p><span>Email:</span> info@selglam.com</p>
+          <p><span>Phone:</span> tel. +48 17 200 05 16 </p>
+        </div>
+      </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+    <script src="scripts.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          document.getElementById('lang-btn').addEventListener('click', function () {
+              window.location.href = 'index.html'; 
+          });
+      });
+  </script> 
+  </body>
+</html>

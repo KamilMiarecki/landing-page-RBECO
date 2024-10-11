@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>LANDING PAGE RBECO</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo"><img src="images/rblogo.png" alt="logo" /></div>
+      
+      <ul class="nav__links">
+        <li class="link"><a href="#o-nas">O NAS</a></li>
+        <li class="link"><a href="#produkty">PRODUKTY</a></li>
+        <li class="link"><a href="#opinie">OPINIE</a></li>
+        <li class="link"><a href="#kontakt">KONTAKT</a></li>
+      </ul>
+      <button class="btnheader" onclick="scrollToContact()">Umów się na wizytę</button>
+      <button id="lang-btn" class="lang-btn" onclick="toggleLanguage()"> <img src="images/pl.png"  width="25" height="25"alt="">PL</button> 
+    </nav>
+    <header>
+      <div class="section__container header__container">
+        <div class="header__image">
+          <img src="images/7.jpeg" alt="header" />
+          <img src="images/5.png" alt="header" />
+          
+        </div>
+        <div class="header__content">
+          <div>
+            <!-- <p class="sub__header">Explore</p> -->
+            <h1>Recycling <br> is just <br />the beginning ! </h1>
+            <p class="section__subtitle">
+              Naszą działalnością firmy jest kompleksowe zaopatrzenie w eko-komponenty do pakowania  <br> i jednoczesną pomoc w kreowaniu proekologicznego wizerunku marki klienta.
+            </p>
+            <div class="action__btns">
+              <a class="btn" href="https://selglam.com/kat/eko-wypelniacze/wiorka" role="button">Zobacz więcej</a>
+              <!-- <div class="story">
+                <div class="video__image">
+                  <img src="assets/story.jpg" alt="story" />
+                  <span><i class="ri-play-fill"></i></span>
+                </div>
+                <span>Watch our story</span>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="gallary" id="produkty">
+      <div class="section__container gallary__container">
+        <div class="gallary__content">
+          <div>
+            <h2 class="section__title">
+              Poznaj nasze produkty
+            </h2>
+            <p class="section__subtitle">
+              Nasze produkty są w pełni ekologiczne <br>i niezawodne.
+            </p>
+            <div class="view__all">
+              <a class="btn" href="https://selglam.com/kat/eko-wypelniacze/wiorka" role="button">
+                Zobacz więcej
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="image__gallary">
+          <div class="gallary__col">
+            <img src="images/1.png" alt="gallary" />
+          </div>
+          <div class="gallary__col">
+            <img src="images/2.png" alt="gallary" />
+            <img src="images/3.png" alt="gallary" />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+  <section class="section__container destination__container" id="o-nas">
+  <div class="section__header">
+    <div>
+      <h2 class="section__title"> Zainspiruj się: Nasze produkty w akcji</h2>
+      <p class="section__subtitle">
+        Zbliża się ważna okazja? Planujesz event branżowy i szukasz pomysłu na drobne upominki dla swoich gości? Zostaw to nam! Możemy stworzyć dla Ciebie wspaniały kosz prezentowy personalizowany specjalnie pod Ciebie. 
+      </p>
+    </div>
+    <!-- <div class="destination__nav">
+      <span><i class="ri-arrow-left-s-line"></i></span>
+      <span><i class="ri-arrow-right-s-line"></i></span>
+    </div> -->
+  </div>
+  
+  <div class="destination__grid">
+    <div class="destination__card">
+      <img src="images_for_inspiration/1.png" alt="destination" class="zoom-image" onclick="openImage(0)" />
+      <div class="destination__details">
+        <p class="destination__title">KLIKNIJ</p>
+        <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
+      </div>
+    </div>
+    <div class="destination__card">
+      <img src="images_for_inspiration/2.png" alt="destination" class="zoom-image" onclick="openImage(1)" />
+      <div class="destination__details">
+        <p class="destination__title">KLIKNIJ</p>
+        <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
+      </div>
+    </div>
+    <div class="destination__card">
+      <img src="images_for_inspiration/3.png" alt="destination" class="zoom-image" onclick="openImage(2)" />
+      <div class="destination__details">
+        <p class="destination__title">KLIKNIJ</p>
+        <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
+      </div>
+    </div>
+    <div class="destination__card">
+      <img src="images_for_inspiration/4.png" alt="destination" class="zoom-image" onclick="openImage(3)" />
+      <div class="destination__details">
+        <p class="destination__title">KLIKNIJ</p>
+        <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
+      </div>
+    </div>
+    <div class="destination__card">
+      <img src="images_for_inspiration/5.png" alt="destination" class="zoom-image" onclick="openImage(4)" />
+      <div class="destination__details">
+        <p class="destination__title">KLIKNIJ</p>
+        <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
+      </div>
+    </div>
+    <div class="destination__card">
+      <img src="images_for_inspiration/6.png" alt="destination" class="zoom-image" onclick="openImage(5)" />
+      <div class="destination__details">
+        <p class="destination__title">KLIKNIJ</p>
+        <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
+      </div>
+    </div>
+    <div class="destination__card">
+      <img src="images_for_inspiration/7.png"destination" class="zoom-image" onclick="openImage(6)" />
+      <div class="destination__details">
+        <p class="destination__title">KLIKNIJ</p>
+        <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
+      </div>
+    </div>
+    <div class="destination__card">
+      <img src="images_for_inspiration/8.png" alt="destination" class="zoom-image" onclick="openImage(7)" />
+      <div class="destination__details">
+        <p class="destination__title">KLIKNIJ</p>
+        <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeImage()">&times;</span>
+    <img class="modal-content" id="modal-img">
+    
+    <!-- Dodaj strzałki nawigacyjne -->
+    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+    <a class="next" onclick="changeImage(1)">&#10095;</a>
+  </div>
+</section>
+
+
+    <section class="trip" id="opinie">
+      <div class="section__container trip__container">
+        <h2 class="section__title">Opinie naszych klientów</h2>
+        <p class="section__subtitle">
+          Zobacz, jak oceniają Nas Nasi klienci
+        </p>
+          
+        
+        <div id="shapo-widget-e1e24931344d910d185b"></div>
+<script id="shapo-embed-js" type="text/javascript" src="https://cdn.shapo.io/js/embed.js" defer></script>
+        
+      </div>
+    </section>
+
+    
+
+    <section class="subscribe" id ="kontakt">
+      <div class="section__container subscribe__container">
+        <div class="subscribe__content">
+          <h2 class="section__title">Napisz do Nas i dowiedz się więcej</h2>
+          <!-- <p class="section__subtitle">Informacje na temat kontaktu.</p> -->
+        </div>
+        <div class="subscribe__form">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="89dd3bd1-6a56-468b-b69c-77712c94f781">
+            <input type="text" name="name" placeholder="imię" required />
+            <input type="email" name="email" placeholder="email" required /> 
+            <textarea name="message" placeholder="Twoja wiadomość: " required></textarea> 
+            <br>
+            <center><button class="btn" type="submit">Wyślij</button></center>
+        </form>
+        </div>
+      </div>
+    </section>
+    
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>RBECO<span>.</span></h3>
+          <p>
+            Naszą działalnością firmy jest kompleksowe zaopatrzenie w eko-komponenty do pakowania i jednoczesną pomoc w kreowaniu proekologicznego wizerunku marki klienta.
+          </p>
+        </div>
+        <!-- <div class="footer__col">
+          <h4>Support</h4>
+          <p>FAQs</p>
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+          <p>Contact Us</p>
+        </div> -->
+        <div class="footer__col">
+          <h4>Skontaktuj się z nami</h4>
+          <p>
+            <span>Adres:</span> ul. Załęska 106B
+            35-322 Rzeszów
+          </p>
+          <p><span>Email:</span> info@selglam.com</p>
+          <p><span>Phone:</span> tel. +48 17 200 05 16 </p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 rbeco. All rights reserved.
+      </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+    <script src="scripts.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          document.getElementById('lang-btn').addEventListener('click', function () {
+              window.location.href = 'index_en.html'; 
+          });
+      });
+  </script> 
+  </body>
+</html>
