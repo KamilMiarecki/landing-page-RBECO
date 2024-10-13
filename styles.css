@@ -90,6 +90,7 @@ img {
 body {
   font-family: "Baloo Tamma 2", system-ui ;
   font-weight:600;
+  overflow-x: hidden;
   
 }
 
@@ -104,6 +105,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 
@@ -139,7 +141,7 @@ nav {
 }
 
 header {
-  background-color: var(--secondary-color);
+  background-color:var(--secondary-color);
 }
 
 .header__container {
@@ -825,6 +827,31 @@ transition: 0.3s;
     border-radius: 1rem;
   }
 }
+@media (width < 350px) {
+  
+  .btnheader{
+    font-size: 0.5rem;
+    padding: 0.6rem 0.6rem;
+    border-radius: 1rem;
+  }
+  .nav__logo img{
+    width: 150px;
+    height: 60px;
+  }
+  .lang-btn img{
+    font-size: 0.8rem;
+    width: 20px;
+    height: 20px;
+  }
+  .lang-btn {
+    font-size: 10px;
+    
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+  }
+}
+
+
 
 
 
