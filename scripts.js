@@ -100,6 +100,120 @@ document.querySelectorAll('.nav__links a').forEach(link => {
 
 
 
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+// Tworzymy instancję mapy
+var chart = am4core.create("chartdiv", am4maps.MapChart);
+
+// Ustawiamy projekcję mapy
+chart.projection = new am4maps.projections.Miller();
+
+// Włączamy przesuwanie i zoomowanie
+chart.panBehavior = "move"; 
+chart.zoomControl = new am4maps.ZoomControl();
+
+// Definiujemy listę odwiedzonych krajów i przypisane im kolory
+var visitedCountries = [
+  { "id": "FR", "name": "France", "color": am4core.color("#ff0000") },  // Czerwony
+  { "id": "IT", "name": "Italy", "color": am4core.color("#0000ff") },   // Niebieski
+  { "id": "ES", "name": "Spain", "color": am4core.color("#ffff00") },   // Żółty
+  { "id": "PL", "name": "Poland", "color": am4core.color("#ffa500") },  // Pomarańczowy
+  { "id": "DE", "name": "Germany", "color": am4core.color("#00ff00") }, // Zielony
+  { "id": "NL", "name": "Netherlands", "color": am4core.color("#800080") }, // Fioletowy
+  { "id": "GR", "name": "Greece", "color": am4core.color("#00ffff") },   // Cyjan
+  { "id": "US", "name": "United States", "color": am4core.color("#800080") } // fioletowy
+];
+
+// Tworzymy warstwę dla mapy świata
+var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+polygonSeries.useGeodata = true;
+polygonSeries.geodata = am4geodata_worldLow;
+
+// Ustawiamy domyślny kolor krajów na szary
+var polygonTemplate = polygonSeries.mapPolygons.template;
+polygonTemplate.fill = am4core.color("#aaaaaa"); // Szary kolor
+
+// Dodajemy tooltip z nazwą kraju
+polygonTemplate.tooltipText = "{name}";
+polygonTemplate.nonScalingStroke = true;
+polygonTemplate.strokeWidth = 0.5;
+
+// Stany hover i active dla podświetlania krajów
+var hs = polygonTemplate.states.create("hover");
+hs.properties.fill = am4core.color("#aaaaaa"); // Kolor podświetlenia na hover
+
+var activeState = polygonTemplate.states.create("active");
+activeState.properties.fill = am4core.color("#aaaaaa"); // Kolor po kliknięciu
+
+// Tablica, aby przechować odwiedzone kraje dla późniejszego zoomu
+var visitedPolygons = [];
+
+// Tworzymy serię dla każdego odwiedzonego kraju z przypisanym kolorem
+visitedCountries.forEach(function(country) {
+  var countrySeries = chart.series.push(new am4maps.MapPolygonSeries());
+
+  // Ustawiamy mapę dla każdego kraju
+  countrySeries.geodata = am4geodata_worldLow;
+  countrySeries.include = [country.id]; // Kod kraju
+  
+  // Ustawiamy tooltip, kolor i efekt hover
+  var countryPolygon = countrySeries.mapPolygons.template;
+  countryPolygon.fill = country.color;
+  countryPolygon.tooltipText = "[bold]{name}[/]"; // Nazwa kraju w tooltip
+  countryPolygon.strokeWidth = 2;
+  
+  // Stan hover dla podświetlenia odwiedzonych krajów na ciemniejszy kolor
+  var hoverState = countryPolygon.states.create("hover");
+  hoverState.properties.fill = am4core.color(am4core.colors.brighten(country.color.rgb, -0.3)); // Ciemniejszy kolor na hover
+
+  // Animacja dla odwiedzonego kraju
+  countryPolygon.events.on("inited", function(event) {
+    event.target.animate({ property: "fill", to: country.color, duration: 1000, easing: am4core.ease.linear });
+  });
+
+  // Zapisujemy odwiedzone kraje do listy visitedPolygons, aby móc na nie później zoomować
+  countrySeries.events.on("inited", function() {
+    visitedPolygons.push(countrySeries);
+    if (visitedPolygons.length === visitedCountries.length) {
+      zoomToVisitedCountries();
+    }
+  });
+});
+
+// Funkcja do zoomowania na odwiedzone kraje
+function zoomToVisitedCountries() {
+  var bounds = chart.getGeodataBounds(visitedPolygons.map(series => series.mapPolygons.getIndex(0)));
+
+  if (bounds) {
+    chart.zoomToRectangle(bounds.north, bounds.east, bounds.south, bounds.west, 1, true);
+  }
+}
 
 
+// // Dodajemy legendę
+// var legend = new am4maps.Legend();
+// legend.parent = chart.chartContainer;
+// legend.width = am4core.percent(100);
+// legend.position = "bottom";
+// legend.valign = "bottom";
+// legend.marginBottom = 20;
+// legend.data = visitedCountries.map(function(country) {
+//   return {
+//     name: country.name,
+//     fill: country.color
+//   };
+// });
 
+// // Marker stylu dla legendy
+// legend.itemContainers.template.clickable = false;
+// legend.itemContainers.template.focusable = false;
+// legend.itemContainers.template.cursorOverStyle = am4core.MouseCursorStyle.default;
+// legend.labels.template.text = "[bold]{name}[/]";
+
+// // Dodanie ikonki (prostokąta) dla każdego kraju w legendzie
+// var marker = legend.markers.template.children.getIndex(0);
+// marker.cornerRadius(12, 12, 12, 12);
+// marker.width = 18;
+// marker.height = 18;
