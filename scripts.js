@@ -23,14 +23,14 @@ function topFunction() {
 
 // Tablica obrazów
 var images = [
-  "images_for_inspiration/1.png",
-  "images_for_inspiration/2.png",
-  "images_for_inspiration/3.png",
-  "images_for_inspiration/4.png",
-  "images_for_inspiration/5.png",
-  "images_for_inspiration/6.png",
-  "images_for_inspiration/7.png",
-  "images_for_inspiration/8.png",
+  "images_for_inspiration/1.jpg",
+  "images_for_inspiration/2.jpg",
+  "images_for_inspiration/3.jpg",
+  "images_for_inspiration/4.jpg",
+  "images_for_inspiration/5.jpg",
+  "images_for_inspiration/6.jpg",
+  "images_for_inspiration/7.jpg",
+  "images_for_inspiration/8.jpg",
 ];
 
 var currentIndex = 0; // Bieżący indeks obrazu
@@ -115,15 +115,35 @@ chart.panBehavior = "move";
 chart.zoomControl = new am4maps.ZoomControl();
 
 // Definiujemy listę odwiedzonych krajów i przypisane im kolory
-var visitedCountries = [
-  { "id": "FR", "name": "France", "color": am4core.color("#ff0000") },  // Czerwony
+var visitedCountries = [{ "id": "FR", "name": "France", "color": am4core.color("#ff0000") },  // Czerwony
   { "id": "IT", "name": "Italy", "color": am4core.color("#0000ff") },   // Niebieski
   { "id": "ES", "name": "Spain", "color": am4core.color("#ffff00") },   // Żółty
   { "id": "PL", "name": "Poland", "color": am4core.color("#ffa500") },  // Pomarańczowy
   { "id": "DE", "name": "Germany", "color": am4core.color("#00ff00") }, // Zielony
   { "id": "NL", "name": "Netherlands", "color": am4core.color("#800080") }, // Fioletowy
   { "id": "GR", "name": "Greece", "color": am4core.color("#00ffff") },   // Cyjan
-  { "id": "US", "name": "United States", "color": am4core.color("#800080") } // fioletowy
+  { "id": "US", "name": "United States", "color": am4core.color("#ff00ff") }, // Różowy
+  { "id": "AT", "name": "Austria", "color": am4core.color("#8b0000") }, // Ciemnoczerwony
+  { "id": "BE", "name": "Belgium", "color": am4core.color("#4682b4") }, // Stalowoniebieski
+  { "id": "BG", "name": "Bulgaria", "color": am4core.color("#00ff7f") }, // Jasnozielony
+  { "id": "HR", "name": "Croatia", "color": am4core.color("#b8860b") }, // Ciemnozłoty
+  { "id": "CY", "name": "Cyprus", "color": am4core.color("#da70d6") }, // Orchidea
+  { "id": "DK", "name": "Denmark", "color": am4core.color("#6495ed") }, // Kornflower Blue
+  { "id": "EE", "name": "Estonia", "color": am4core.color("#ff6347") }, // jasny czerwony
+  { "id": "FI", "name": "Finland", "color": am4core.color("#40e0d0") }, // Turkusowy
+  { "id": "HU", "name": "Hungary", "color": am4core.color("#b22222") }, // Firebrick
+  { "id": "IE", "name": "Ireland", "color": am4core.color("#228b22") }, // Leśna zieleń
+  { "id": "LT", "name": "Lithuania", "color": am4core.color("#ff4500") }, // Oranżowy
+  { "id": "LU", "name": "Luxembourg", "color": am4core.color("#d2691e") }, // Czekoladowy
+  { "id": "LV", "name": "Latvia", "color": am4core.color("#9932cc") }, // Ciemny fiolet
+  { "id": "NO", "name": "Norway", "color": am4core.color("#00bfff") }, // Głębokie niebo
+  { "id": "PT", "name": "Portugal", "color": am4core.color("#ffd700") }, // Złoty
+  { "id": "SE", "name": "Sweden", "color": am4core.color("#7cfc00") }, // Zielony
+  { "id": "SK", "name": "Slovakia", "color": am4core.color("#dc143c") }, // Karmazynowy
+  { "id": "CH", "name": "Switzerland", "color": am4core.color("#ff1493") }, // Jasnoróżowy
+  { "id": "UA", "name": "Ukraine", "color": am4core.color("#adff2f") }, // Zielonożółty
+  { "id": "GB", "name": "United Kingdom", "color": am4core.color("#191970") } // Midnight Blue
+  
 ];
 
 // Tworzymy warstwę dla mapy świata
@@ -190,30 +210,3 @@ function zoomToVisitedCountries() {
     chart.zoomToRectangle(bounds.north, bounds.east, bounds.south, bounds.west, 1, true);
   }
 }
-
-
-// // Dodajemy legendę
-// var legend = new am4maps.Legend();
-// legend.parent = chart.chartContainer;
-// legend.width = am4core.percent(100);
-// legend.position = "bottom";
-// legend.valign = "bottom";
-// legend.marginBottom = 20;
-// legend.data = visitedCountries.map(function(country) {
-//   return {
-//     name: country.name,
-//     fill: country.color
-//   };
-// });
-
-// // Marker stylu dla legendy
-// legend.itemContainers.template.clickable = false;
-// legend.itemContainers.template.focusable = false;
-// legend.itemContainers.template.cursorOverStyle = am4core.MouseCursorStyle.default;
-// legend.labels.template.text = "[bold]{name}[/]";
-
-// // Dodanie ikonki (prostokąta) dla każdego kraju w legendzie
-// var marker = legend.markers.template.children.getIndex(0);
-// marker.cornerRadius(12, 12, 12, 12);
-// marker.width = 18;
-// marker.height = 18;
