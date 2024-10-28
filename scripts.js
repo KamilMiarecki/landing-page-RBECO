@@ -22,14 +22,14 @@ function topFunction() {
 
 // Image array
 const images = [
-  "images_for_inspiration/1.jpg",
-  "images_for_inspiration/2.jpg",
-  "images_for_inspiration/3.jpg",
-  "images_for_inspiration/4.jpg",
-  "images_for_inspiration/5.jpg",
-  "images_for_inspiration/6.jpg",
-  "images_for_inspiration/7.jpg",
-  "images_for_inspiration/8.jpg",
+  "images_for_inspiration/zestaw-prezentowy-swieca-sojowa-mini-perfumy-zolty.jpg",
+  "images_for_inspiration/pudelko-prezentowe-niebieskie.jpg",
+  "images_for_inspiration/kosz-prezentowy-fioletowe-kwiaty.jpg",
+  "images_for_inspiration/zestaw-prezentowy-mydlo-lawendowe-serum-zielone.jpg",
+  "images_for_inspiration/zestaw-prezentowy-ceramiczna-miska-lyzeczka-miodu-czerwone.jpg",
+  "images_for_inspiration/luksusowy-zestaw-mini-kosmetyki-fioletowy.jpg",
+  "images_for_inspiration/zestaw-prezentowy-krem-do-rak-ozdoba-choinkowa-niebieskie.jpg",
+  "images_for_inspiration/naturalna-pielegnacja-naturalny.jpg",
 ];
 
 let currentIndex = 0; // Current image index
