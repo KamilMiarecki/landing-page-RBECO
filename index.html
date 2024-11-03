@@ -1,300 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Rbeco, SELGLAM, eko produkty, zapakowanie, ochrona, spersonalizacja, unboxing">
-    
-    
-    <meta name="description" content="W ofercie Rbeco znajdują się eko produkty pozwalające zapakować, ochronić, spersonalizować dany produkt, oraz stworzyć unboxing od podstaw.">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/logo.png">
-    <meta property="og:title" content="RBECO & SELGLAM">
-    <title>RBECO & SELGLAM</title>
-  </head>
-  <body>
-    <nav>
-      <div class="nav__logo"><img src="images/rblogo_modified.jpg" alt="logo" /></div>
-      
-      <ul class="nav__links">
-        <li class="link"><a href="#o-nas">INSPIRACJE</a></li>
-        <li class="link"><a href="#produkty">PRODUKTY</a></li>
-        <li class="link"><a href="#opinie">OPINIE</a></li>
-        <li class="link"><a href="#kontakt">KONTAKT</a></li>
-      </ul>
-      <button class="btnheader" onclick="scrollToContact()">Napisz do Nas</button>
-      <button id="lang-btn" class="lang-btn" onclick="toggleLanguage()"> <img src="images/pl.png"  width="25" height="25"alt="">PL</button> 
-    </nav>
-    <header>
-      <div class="section__container header__container">
-        <div class="header__image">
-          <img src="images/11.jpg" alt="header" />
-          <img src="images/12.jpg" alt="header" />
-          
-        </div>
-        <div class="header__content">
-          <div>
-            <h1>ZIGZAG DELUX® </h1>
-            <p class="section__subtitle">
-              Jesteśmy wiodącym producentem najwyższej jakości wypełnień, w postaci wiór papierowych ZIGZAG DELUX® w Europie.
-               Nasza marka gwarantuje nie tylko najwyższą jakość i najlepszą ochronę produktów w transporcie ale również 
-               niezapomniane wrażenia z rozpakowywania paczek. Sprawdź na mapie w dole strony w jakich krajach możesz zakupić 
-               nasze produkty w mniejszych ilościach u naszych dystrybutorów.
-            </p>
-            <div class="action__btns">
-              <a class="btn" href="https://selglam.com/kat/eko-wypelniacze/wiorka" role="button">Zobacz więcej</a>
-             
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
 
-    <section class="gallery" id="produkty">
-      <div class="section__container gallery__container">
-        <div class="gallery__content">
-          <div>
-            <h2 class="section__title">
-              Poznaj nasze produkty
-            </h2>
-            <p class="section__subtitle">
-              ZIGZAG DELUX tm. jest ekologiczny,  bezpyłowy, posiada certyfikat FSC i jest produkowany z najwyższej jakości celulozy.
-              Jeśli chciałbyś zostać naszym dystrybutorem, partnerem , bądz szukasz dużych ilości luksusowych wypełnień dla swoich produktów skontaktuj się bezpośrednio z nami a przygotujemy indywidualne warunki dla Ciebie!
-            </p>
-            <div class="view__all">
-              <a class="btn" href="https://selglam.com/kat/eko-wypelniacze/wiorka" role="button">
-                Zobacz więcej
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="image__gallery">
-          <div class="gallery__col">
-            <img src="images/1.jpg" alt="gallery" />
-          </div>
-          <div class="gallery__col">
-            <img src="images/2.jpg" alt="gallery" />
-            <img src="images/3.jpg" alt="gallery" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords"
+    content="Rbeco,SELGLAM,eko produkty,zapakowanie,ochrona,spersonalizacja,unboxing,ekologiczne opakowania,biodegradowalne materiały,przyjazne środowisku,personalizowane opakowania,ekologiczne unboxing,zero waste,ekologiczne rozwiązania,opakowania przyjazne środowisku,recykling,opakowania premium,zrównoważony rozwój,materiały odnawialne,eco-friendly packaging,ochrona środowiska,opakowania ekologiczne,stylowe opakowania,opakowania dla e-commerce,ekologiczna marka,wyjątkowe opakowanie,ekologiczne materiały,spersonalizowane dodatki,unikalne opakowanie,opakowania luksusowe">
+  <meta name="description"
+    content="W ofercie Rbeco znajdują się eko produkty pozwalające zapakować, ochronić, spersonalizować dany produkt, oraz stworzyć unboxing od podstaw.">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="cookies.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="images/logo.png">
+  <meta property="og:title" content="RBECO & SELGLAM">
+  <title>RBECO & SELGLAM</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav__logo"><img src="images/rblogo_modified.jpg" alt="logo" /></div>
+
+    <ul class="nav__links">
+      <li class="link"><a href="#o-nas">INSPIRACJE</a></li>
+      <li class="link"><a href="#produkty">PRODUKTY</a></li>
+      <li class="link"><a href="#opinie">OPINIE</a></li>
+      <li class="link"><a href="#kontakt">KONTAKT</a></li>
+    </ul>
+    <button class="btnheader" onclick="scrollToContact()">Napisz do Nas</button>
+    <button id="lang-btn" class="lang-btn" onclick="toggleLanguage()"> <img src="images/pl.png" width="25" height="25"
+        alt="">PL</button>
+  </nav>
+  <header>
+    <div class="section__container header__container">
+      <div class="header__image">
+        <img src="images/11.jpg" alt="header" />
+        <img src="images/12.jpg" alt="header" />
+
+      </div>
+      <div class="header__content">
+        <div>
+          <h1>ZIGZAG DELUX® </h1>
+          <p class="section__subtitle">
+            Jesteśmy wiodącym producentem najwyższej jakości wypełnień, w postaci wiór papierowych ZIGZAG DELUX® w
+            Europie.
+            Nasza marka gwarantuje nie tylko najwyższą jakość i najlepszą ochronę produktów w transporcie ale również
+            niezapomniane wrażenia z rozpakowywania paczek. Sprawdź na mapie w dole strony w jakich krajach możesz
+            zakupić
+            nasze produkty w mniejszych ilościach u naszych dystrybutorów.
+          </p>
+          <div class="action__btns">
+            <a class="btn" href="https://selglam.com/kat/eko-wypelniacze/wiorka" role="button">Zobacz więcej</a>
+
           </div>
         </div>
       </div>
-    </section>
-    
+    </div>
+  </header>
+
+  <section class="gallery" id="produkty">
+    <div class="section__container gallery__container">
+      <div class="gallery__content">
+        <div>
+          <h2 class="section__title">
+            Poznaj nasze produkty
+          </h2>
+          <p class="section__subtitle">
+            ZIGZAG DELUX tm. jest ekologiczny, bezpyłowy, posiada certyfikat FSC i jest produkowany z najwyższej jakości
+            celulozy.
+            Jeśli chciałbyś zostać naszym dystrybutorem, partnerem , bądz szukasz dużych ilości luksusowych wypełnień
+            dla swoich produktów skontaktuj się bezpośrednio z nami a przygotujemy indywidualne warunki dla Ciebie!
+          </p>
+          <div class="view__all">
+            <a class="btn" href="https://selglam.com/kat/eko-wypelniacze/wiorka" role="button">
+              Zobacz więcej
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="image__gallery">
+        <div class="gallery__col">
+          <img src="images/1.jpg" alt="gallery" />
+        </div>
+        <div class="gallery__col">
+          <img src="images/2.jpg" alt="gallery" />
+          <img src="images/3.jpg" alt="gallery" />
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 
   <section class="section__container destination__container" id="o-nas">
-  <div class="section__header">
-    <div>
-      <h2 class="section__title"> Zainspiruj się: Nasze produkty w akcji</h2>
-      <p class="section__subtitle">
-        Zbliża się ważna okazja? Planujesz event branżowy i szukasz pomysłu na drobne upominki dla swoich gości? Zostaw to nam! Możemy stworzyć dla Ciebie wspaniały kosz prezentowy personalizowany specjalnie pod Ciebie. 
-      </p>
-    </div>
-    <!-- <div class="destination__nav">
-      <span><i class="ri-arrow-left-s-line"></i></span>
-      <span><i class="ri-arrow-right-s-line"></i></span>
-    </div> -->
-  </div>
-  
-  <div class="destination__grid">
-    <div class="destination__card">
-      <img src="images_for_inspiration/zestaw-prezentowy-swieca-sojowa-mini-perfumy-zolty.jpg" alt="Zestaw prezentowy z świecą zapachową na żółtym wypełnieniu" class="zoom-image" onclick="openImage(0)" />
-      <div class="destination__details">
-        <p class="destination__title">KLIKNIJ</p>
-        <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
-      </div>
-    </div>
-    <div class="destination__card">
-      <img src="images_for_inspiration/pudelko-prezentowe-niebieskie.jpg" alt="Pudełko prezentowe z mini słoikiem na niebieskim wypełnieniu" class="zoom-image" onclick="openImage(1)" />
-      <div class="destination__details">
-        <p class="destination__title">KLIKNIJ</p>
-        <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
-      </div>
-    </div>
-    <div class="destination__card">
-      <img src="images_for_inspiration/kosz-prezentowy-fioletowe-kwiaty.jpg" alt="Kosz prezentowy ozdobiony fioletowymi kwiatami i wypełnieniem w kolorze bordo" class="zoom-image" onclick="openImage(2)" />
-      <div class="destination__details">
-        <p class="destination__title">KLIKNIJ</p>
-        <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
-      </div>
-    </div>
-    <div class="destination__card">
-      <img src="images_for_inspiration/zestaw-prezentowy-mydlo-lawendowe-serum-zielone.jpg" alt="Elegancki zestaw z mydłem lawendowym i serum do twarzy, udekorowany różowymi kwiatami i zielonym wypełnieniem" class="zoom-image" onclick="openImage(3)" />
-      <div class="destination__details">
-        <p class="destination__title">KLIKNIJ</p>
-        <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
-      </div>
-    </div>
-    <div class="destination__card">
-      <img src="images_for_inspiration/zestaw-prezentowy-ceramiczna-miska-lyzeczka-miodu-czerwone.jpg" alt="Zestaw z ceramiczną miseczką, łyżeczką do miodu i herbatą w stylowym opakowaniu na czerwonym wypełnieniu" class="zoom-image" onclick="openImage(4)" />
-      <div class="destination__details">
-        <p class="destination__title">KLIKNIJ</p>
-        <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
-      </div>
-    </div>
-    <div class="destination__card">
-      <img src="images_for_inspiration/luksusowy-zestaw-mini-kosmetyki-fioletowy.jpg" alt="Luksusowy zestaw prezentowy w czarnym pudełku z fioletowym wypełnieniem" class="zoom-image" onclick="openImage(5)" />
-      <div class="destination__details">
-        <p class="destination__title">KLIKNIJ</p>
-        <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
-      </div>
-    </div>
-    <div class="destination__card">
-      <img src="images_for_inspiration/zestaw-prezentowy-krem-do-rak-ozdoba-choinkowa-niebieskie.jpg" alt="Pudełko prezentowe z niebieskim wypełnieniem" class="zoom-image" onclick="openImage(6)" />
-      <div class="destination__details">
-        <p class="destination__title">KLIKNIJ</p>
-        <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
-      </div>
-    </div>
-    <div class="destination__card">
-      <img src="images_for_inspiration/naturalna-pielegnacja-naturalny.jpg" alt="Naturalny zestaw do pielęgnacji w stylowym opakowaniu na beżowym wypełnieniu" class="zoom-image" onclick="openImage(7)" />
-      <div class="destination__details">
-        <p class="destination__title">KLIKNIJ</p>
-        <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal -->
-  <div id="imageModal" class="modal">
-    <span class="close" onclick="closeImage()">&times;</span>
-    <img class="modal-content" id="modal-img">
-    
-    <!-- Dodaj strzałki nawigacyjne -->
-    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
-    <a class="next" onclick="changeImage(1)">&#10095;</a>
-  </div>
-</section>
-
-
-    <section class="opinions" id="opinie">
-      <div class="section__container opinions__container">
-        <h2 class="section__title">Opinie naszych klientów</h2>
+    <div class="section__header">
+      <div>
+        <h2 class="section__title"> Zainspiruj się: Nasze produkty w akcji</h2>
         <p class="section__subtitle">
-          Zobacz, jak oceniają Nas Nasi klienci
+          Zbliża się ważna okazja? Planujesz event branżowy i szukasz pomysłu na drobne upominki dla swoich gości?
+          Zostaw to nam! Możemy stworzyć dla Ciebie wspaniały kosz prezentowy personalizowany specjalnie pod Ciebie.
         </p>
-          
-        
-        <div id="shapo-widget-e1e24931344d910d185b"></div>
-<script id="shapo-embed-js" type="text/javascript" src="https://cdn.shapo.io/js/embed.js" defer></script>
-        
       </div>
-    </section>
 
-  
+    </div>
+
+    <div class="destination__grid">
+      <div class="destination__card">
+        <img src="images_for_inspiration/zestaw-prezentowy-swieca-sojowa-mini-perfumy-zolty.jpg"
+          alt="Zestaw prezentowy z świecą zapachową na żółtym wypełnieniu" class="zoom-image" onclick="openImage(0)" />
+        <div class="destination__details">
+          <p class="destination__title">KLIKNIJ</p>
+          <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
+        </div>
+      </div>
+      <div class="destination__card">
+        <img src="images_for_inspiration/pudelko-prezentowe-niebieskie.jpg"
+          alt="Pudełko prezentowe z mini słoikiem na niebieskim wypełnieniu" class="zoom-image"
+          onclick="openImage(1)" />
+        <div class="destination__details">
+          <p class="destination__title">KLIKNIJ</p>
+          <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
+        </div>
+      </div>
+      <div class="destination__card">
+        <img src="images_for_inspiration/kosz-prezentowy-fioletowe-kwiaty.jpg"
+          alt="Kosz prezentowy ozdobiony fioletowymi kwiatami i wypełnieniem w kolorze bordo" class="zoom-image"
+          onclick="openImage(2)" />
+        <div class="destination__details">
+          <p class="destination__title">KLIKNIJ</p>
+          <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
+        </div>
+      </div>
+      <div class="destination__card">
+        <img src="images_for_inspiration/zestaw-prezentowy-mydlo-lawendowe-serum-zielone.jpg"
+          alt="Elegancki zestaw z mydłem lawendowym i serum do twarzy, udekorowany różowymi kwiatami i zielonym wypełnieniem"
+          class="zoom-image" onclick="openImage(3)" />
+        <div class="destination__details">
+          <p class="destination__title">KLIKNIJ</p>
+          <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
+        </div>
+      </div>
+      <div class="destination__card">
+        <img src="images_for_inspiration/zestaw-prezentowy-ceramiczna-miska-lyzeczka-miodu-czerwone.jpg"
+          alt="Zestaw z ceramiczną miseczką, łyżeczką do miodu i herbatą w stylowym opakowaniu na czerwonym wypełnieniu"
+          class="zoom-image" onclick="openImage(4)" />
+        <div class="destination__details">
+          <p class="destination__title">KLIKNIJ</p>
+          <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
+        </div>
+      </div>
+      <div class="destination__card">
+        <img src="images_for_inspiration/luksusowy-zestaw-mini-kosmetyki-fioletowy.jpg"
+          alt="Luksusowy zestaw prezentowy w czarnym pudełku z fioletowym wypełnieniem" class="zoom-image"
+          onclick="openImage(5)" />
+        <div class="destination__details">
+          <p class="destination__title">KLIKNIJ</p>
+          <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
+        </div>
+      </div>
+      <div class="destination__card">
+        <img src="images_for_inspiration/zestaw-prezentowy-krem-do-rak-ozdoba-choinkowa-niebieskie.jpg"
+          alt="Pudełko prezentowe z niebieskim wypełnieniem" class="zoom-image" onclick="openImage(6)" />
+        <div class="destination__details">
+          <p class="destination__title">KLIKNIJ</p>
+          <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
+        </div>
+      </div>
+      <div class="destination__card">
+        <img src="images_for_inspiration/naturalna-pielegnacja-naturalny.jpg"
+          alt="Naturalny zestaw do pielęgnacji w stylowym opakowaniu na beżowym wypełnieniu" class="zoom-image"
+          onclick="openImage(7)" />
+        <div class="destination__details">
+          <p class="destination__title">KLIKNIJ</p>
+          <p class="destination__subtitle"> ABY POWIĘKSZYĆ</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeImage()">&times;</span>
+      <img class="modal-content" id="modal-img">
+
+      <!-- Dodaj strzałki nawigacyjne -->
+      <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+      <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+  </section>
+
+
+  <section class="opinions" id="opinie">
+    <div class="section__container opinions__container">
+      <h2 class="section__title">Opinie naszych klientów</h2>
+      <p class="section__subtitle">
+        Zobacz, jak oceniają Nas Nasi klienci
+      </p>
+
+
+      <div id="shapo-widget-e1e24931344d910d185b"></div>
+      <script id="shapo-embed-js" type="text/javascript" src="https://cdn.shapo.io/js/embed.js" defer></script>
+
+    </div>
+  </section>
+
+
   <!-- Resources -->
-  <script src="https://www.amcharts.com/lib/4/core.js" ></script>
-  <script src="https://www.amcharts.com/lib/4/maps.js" ></script>
-  <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js" ></script>
-  <script src="https://www.amcharts.com/lib/4/themes/animated.js" ></script>
+  <script src="https://www.amcharts.com/lib/4/core.js"></script>
+  <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+  <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
 
-  
- <section id="map">
+
+  <section id="map">
     <h2 class="section__title">Zobacz gdzie możesz znaleźć nasze produkty</h2>
-    <div id="chartdiv"></div> 
+    <div id="chartdiv"></div>
 
-   </section>
+  </section>
   <!-- HTML -->
-  
-  
 
-    <section class="contact" id ="kontakt">
-      <div class="section__container contact__container">
-        <div class="contact__content">
-          <h2 class="section__title">Napisz do Nas i dowiedz się więcej</h2>
-          
-        </div>
-        <div class="contact__form">
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="2a543d61-2090-4590-9faf-cb9a5ef78244">
-            <input type="text" name="name" placeholder="imię" required />
-            <input type="email" name="email" placeholder="email" required /> 
-            <textarea name="message" placeholder="Twoja wiadomość: " required></textarea> 
-            <br>
-            <center><button class="btn" type="submit">Wyślij</button></center>
+
+
+  <section class="contact" id="kontakt">
+    <div class="section__container contact__container">
+      <div class="contact__content">
+        <h2 class="section__title">Napisz do Nas i dowiedz się więcej</h2>
+
+      </div>
+      <div class="contact__form">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="2a543d61-2090-4590-9faf-cb9a5ef78244">
+          <input type="text" name="name" placeholder="Imię" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea name="message" placeholder="Twoja wiadomość: " required></textarea>
+          <br>
+          <center><button class="btn" type="submit">Wyślij</button></center>
         </form>
-        </div>
       </div>
-    </section>
-    
+    </div>
+  </section>
 
-    <footer class="footer">
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <h3>RBECO<span>.</span></h3>
-          <p>
-            Naszą działalnością firmy jest kompleksowe zaopatrzenie w eko-komponenty do pakowania i jednoczesną pomoc w kreowaniu proekologicznego wizerunku marki klienta.
-          </p>
-      
 
-        </div>
-       
-        <div class="footer__col">
-          <h4>Skontaktuj się z nami</h4>
-          <p>
-            <span>Adres:</span> ul. Załęska 106B
-            35-322 Rzeszów
-          </p>
-          <p><span>Email:</span> info@selglam.com</p>
-          <p><span>Phone:</span> tel. +48 17 200 05 16 </p>
-        </div>
-        
+
+  <footer class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h3>RBECO<span>.</span></h3>
+        <p>
+          Naszą działalnością firmy jest kompleksowe zaopatrzenie w eko-komponenty do pakowania i jednoczesną pomoc w
+          kreowaniu proekologicznego wizerunku marki klienta.
+        </p>
+
+
       </div>
-      <div class="footer__bar_social_media">
-        <div class="wrapper">
-          <ul class="wrapper" >
-            <li class="icon instagram">
-              <span class="tooltip">Instagram</span>
-              <a href="https://www.instagram.com/selglamcom/" target="_blank">
-              <span><img src="https://img.icons8.com/?size=100&id=32309&format=png&color=000000" alt="instagram logo"/></span>
+
+      <div class="footer__col">
+        <h4>Skontaktuj się z nami</h4>
+        <p>
+          <span>Adres:</span> ul. Załęska 106B
+          35-322 Rzeszów
+        </p>
+        <p><span>Email:</span> info@selglam.com</p>
+        <p><span>Phone:</span> tel. +48 17 200 05 16 </p>
+      </div>
+
+    </div>
+    <div class="footer__bar_social_media">
+      <div class="wrapper">
+        <ul class="wrapper">
+          <li class="icon instagram">
+            <span class="tooltip">Instagram</span>
+            <a href="https://www.instagram.com/selglamcom/" target="_blank">
+              <span><img src="https://img.icons8.com/?size=100&id=32320&format=png&color=000000"
+                  alt="instagram logo" /></span>
             </a>
-            </li>
-              <li class="icon facebook">
-                <span class="tooltip">Facebook</span>
-                <a href="https://www.facebook.com/rbecorbeco" target="_blank">
-                <span><img src="https://img.icons8.com/?size=100&id=118467&format=png&color=000000" alt="facebook logo"/></span>
-              </a>
-              </li>
-              <li class="icon twitter">
-                <span class="tooltip">Google</span>
-                <a href="https://www.google.com/search?q=selglam%0D%0A&client=opera-gx&hs=rWf&sca_esv=0a3e250173e3dd9d&sxsrf=ADLYWIIQkyhrCEoc4kbKTK70SnTszpCNXA%3A1729370489888&ei=eRkUZ6z2NcDAwPAP8fjVyQs&ved=0ahUKEwjslvCNp5uJAxVAIBAIHXF8NbkQ4dUDCA8&uact=5&oq=selglam%0D%0A&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHNlbGdsYW0KMgQQIxgnMgoQIxiABBgnGIoFMgQQIxgnMggQABiABBiiBEj6C1AAWOIJcAB4AJABAJgBb6ABygSqAQM2LjG4AQPIAQD4AQGYAgegAtQEwgILEAAYgAQYkQIYigXCAgUQABiABMICCxAuGIAEGNEDGMcBwgIFEC4YgATCAgoQABiABBgUGIcCwgIIEC4YgAQY1ALCAggQABiABBjJA8ICChAAGIAEGAoYywHCAgcQABiABBgKwgIHEC4YgAQYCpgDAJIHAzYuMaAHh14&sclient=gws-wiz-serp" target="_blank">
-                <span><img src="https://img.icons8.com/ios-glyphs/30/000000/google-logo--v1.png" alt="google logo"/></span>
-              </a>
-              </li>
-              <li class="icon instagram">
-                <span class="tooltip">Instagram</span>
-                <a href="https://www.instagram.com/rbeco.pl/" target="_blank">
-                <span><img src="https://img.icons8.com/?size=100&id=32309&format=png&color=000000" alt="instagram logo"/></span>
-              </a>
-              </li>
-              
-            </ul>
-          </div>
+          </li>
+          <li class="icon facebook">
+            <span class="tooltip">Facebook</span>
+            <a href="https://www.facebook.com/rbecorbeco" target="_blank">
+              <span><img src="https://img.icons8.com/?size=100&id=F1Q_pDY0qwkx&format=png&color=000000"
+                  alt="facebook logo" /></span>
+            </a>
+          </li>
+          <li class="icon twitter">
+            <span class="tooltip">Google</span>
+            <a href="https://www.google.com/search?q=selglam%0D%0A&client=opera-gx&hs=rWf&sca_esv=0a3e250173e3dd9d&sxsrf=ADLYWIIQkyhrCEoc4kbKTK70SnTszpCNXA%3A1729370489888&ei=eRkUZ6z2NcDAwPAP8fjVyQs&ved=0ahUKEwjslvCNp5uJAxVAIBAIHXF8NbkQ4dUDCA8&uact=5&oq=selglam%0D%0A&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHNlbGdsYW0KMgQQIxgnMgoQIxiABBgnGIoFMgQQIxgnMggQABiABBiiBEj6C1AAWOIJcAB4AJABAJgBb6ABygSqAQM2LjG4AQPIAQD4AQGYAgegAtQEwgILEAAYgAQYkQIYigXCAgUQABiABMICCxAuGIAEGNEDGMcBwgIFEC4YgATCAgoQABiABBgUGIcCwgIIEC4YgAQY1ALCAggQABiABBjJA8ICChAAGIAEGAoYywHCAgcQABiABBgKwgIHEC4YgAQYCpgDAJIHAzYuMaAHh14&sclient=gws-wiz-serp"
+              target="_blank">
+              <span><img src="https://img.icons8.com/?size=100&id=17935&format=png&color=000000"
+                  alt="google logo" /></span>
+            </a>
+          </li>
+          <li class="icon instagram">
+            <span class="tooltip">Instagram</span>
+            <a href="https://www.instagram.com/rbeco.pl/" target="_blank">
+              <span><img src="https://img.icons8.com/?size=100&id=32320&format=png&color=000000"
+                  alt="instagram logo" /></span>
+            </a>
+          </li>
+
+        </ul>
       </div>
-      <div class="footer__bar">
-        Copyright © 2024 rbeco. All rights reserved.
-      </div>
-    </footer>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
-    <script src="scripts.js"></script>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 RBECO. All rights reserved.
+    </div>
+  </footer>
 
 
+  <div id="cookie-banner" class="cookie-banner">
+    <img src="https://img.icons8.com/emoji/48/000000/cookie-emoji.png" alt="Cookie Icon" class="cookie-icon" />
+    <span class="cookie-text">
+        Ta strona korzysta z ciasteczek aby świadczyć usługi na najwyższym poziomie. Dalsze korzystanie ze strony oznacza, że zgadzasz się na ich użycie. 
+        <a href="https://policies.google.com/technologies/cookies?hl=pl" class="cookie-link">Więcej</a>
+    </span>
+    <button id="cookie-accept" class="cookie-button">OK</button>
+</div>
+
+<script src="cookies.js"></script>
 
 
-    
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          document.getElementById('lang-btn').addEventListener('click', function () {
-              window.location.href = 'index_en.html'; 
-          });
+  <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+  <script src="scripts.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById('lang-btn').addEventListener('click', function () {
+        window.location.href = 'index_en.html';
       });
-  </script> 
+    });
+  </script>
 
-  </body>
+
+
+
+</body>
+
 </html>
