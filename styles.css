@@ -15,6 +15,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .section__container {
@@ -506,7 +507,6 @@ header {
   font-family: "Baloo Tamma 2", system-ui; /* Dodanie efektu przejścia */
 }
 
-
 .footer {
   background-color: var(--bg-footer);
 }
@@ -568,6 +568,8 @@ header {
   color: var(--secondary-color);
 
 }
+
+
 
 
 #myBtn {
@@ -854,8 +856,8 @@ transition: 0.3s;
 @media (width < 350px) {
   
   .btnheader{
-    font-size: 0.5rem;
-    padding: 0.6rem 0.6rem;
+    font-size: 0.6rem;
+    padding: 0.8rem 0.8rem;
     border-radius: 1rem;
   }
   .nav__logo img{
@@ -887,7 +889,6 @@ transition: 0.3s;
 #map h2{
   text-align: center;
 }
-
 
 
 .wrapper {
@@ -973,3 +974,10 @@ transition: 0.3s;
   background: #fcfcfc;
   color: #000000;
 }
+
+
+
+
+
+
+
