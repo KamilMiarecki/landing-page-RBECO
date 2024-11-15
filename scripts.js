@@ -1,3 +1,7 @@
+
+AOS.init();
+
+
 // Get the button
 let mybutton = document.getElementById("myBtn");
 
