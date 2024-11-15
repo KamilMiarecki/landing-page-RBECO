@@ -822,6 +822,10 @@ transition: 0.3s;
       padding: 0.5rem 0.5rem;
       border-radius: 1rem;
     }
+    .section__title{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
   }
 
 @media (width < 416px) {
