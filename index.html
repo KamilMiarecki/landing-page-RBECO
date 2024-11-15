@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <link rel="shortcut icon" href="images/logo.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <meta property="og:title" content="RBECO & SELGLAM">
   <title>RBECO & SELGLAM</title>
 </head>
@@ -63,7 +65,7 @@
   </header>
 
   <section class="gallery" id="produkty">
-    <div class="section__container gallery__container">
+    <div class="section__container gallery__container" data-aos="fade-right" data-aos-duration="1000">
       <div class="gallery__content">
         <div>
           <h2 class="section__title">
@@ -98,7 +100,7 @@
 
   <section class="section__container destination__container" id="o-nas">
     <div class="section__header">
-      <div>
+      <div data-aos="zoom-in" data-aos-duration="1000">
         <h2 class="section__title"> Zainspiruj się: Nasze produkty w akcji</h2>
         <p class="section__subtitle">
           Zbliża się ważna okazja? Planujesz event branżowy i szukasz pomysłu na drobne upominki dla swoich gości?
@@ -108,7 +110,7 @@
 
     </div>
 
-    <div class="destination__grid">
+    <div class="destination__grid" data-aos="zoom-in" data-aos-duration="1000">
       <div class="destination__card">
         <img src="images_for_inspiration/zestaw-prezentowy-swieca-sojowa-mini-perfumy-zolty.jpg"
           alt="Zestaw prezentowy z świecą zapachową na żółtym wypełnieniu" class="zoom-image" onclick="openImage(0)" />
@@ -194,7 +196,7 @@
 
 
   <section class="opinions" id="opinie">
-    <div class="section__container opinions__container">
+    <div class="section__container opinions__container" >
       <h2 class="section__title">Opinie naszych klientów</h2>
       <p class="section__subtitle">
         Zobacz, jak oceniają Nas Nasi klienci
@@ -218,7 +220,7 @@
   <section id="map">
     <h2 class="section__title">Zobacz gdzie możesz znaleźć nasze produkty</h2>
     <div id="chartdiv"></div>
-
+  
   </section>
   <!-- HTML -->
 
